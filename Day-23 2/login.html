@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stockly | Sign in</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+  <main class="login-shell">
+    <section class="login-art">
+      <div class="brand brand-light"><span class="brand-mark">S</span><span>Stockly</span></div>
+      <div class="login-art-copy">
+        <span class="eyebrow">INVENTORY, SIMPLIFIED</span>
+        <h1>Your stock.<br>Under control.</h1>
+        <p>Keep products, suppliers, sales and stock movements together in one clear workspace.</p>
+        <div class="login-mini-stats">
+          <div><strong>01</strong><span>Track stock</span></div>
+          <div><strong>02</strong><span>Manage sales</span></div>
+          <div><strong>03</strong><span>Know your numbers</span></div>
+        </div>
+      </div>
+      <div class="art-orb orb-one"></div><div class="art-orb orb-two"></div>
+    </section>
+    <section class="login-panel">
+      <div class="login-form-wrap">
+        <div class="mobile-brand brand"><span class="brand-mark">S</span><span>Stockly</span></div>
+        <span class="eyebrow">WELCOME BACK</span>
+        <h2>Sign in to your account</h2>
+        <p class="muted">Enter your demo credentials to continue.</p>
+        <form id="loginForm" class="stack-form">
+          <label>Email address<input id="loginEmail" type="email" placeholder="admin@demo.com" autocomplete="username" required></label>
+          <label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="Enter password" autocomplete="current-password" required><button type="button" id="togglePassword" class="password-toggle" aria-label="Show password">Show</button></div></label>
+          <div id="loginMessage" class="form-message" aria-live="polite"></div>
+          <button class="btn btn-primary btn-wide" type="submit">Sign in <span>→</span></button>
+        </form>
+        <div class="demo-box">
+          <strong>Demo accounts</strong>
+          <p><b>Admin:</b> admin@demo.com / Admin123!</p>
+          <p><b>Staff:</b> staff@demo.com / Staff123!</p>
+          <button type="button" class="text-button" id="fillAdmin">Fill admin details</button>
+        </div>
+        <p class="login-foot">Demo project · Your data stays in this browser</p>
+      </div>
+    </section>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>
